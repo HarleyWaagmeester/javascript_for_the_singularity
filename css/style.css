@@ -1,0 +1,227 @@
+/* some style */
+/*
+div {
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+            transition: all .25s ease;
+}
+*/
+
+.div2 {
+    width: 50px;
+    height: 100px;
+    border: red solid 2px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    word-wrap: break-word;
+    color: black;}
+
+.z1 {
+    z-index: 1;}
+.z2 {
+    z-index: 2;}
+
+.div3 {
+    width: 50px;
+    height: 100px;
+    border: red solid 2px;
+    position: absolute;
+    top: 200px;
+    left: 75px;
+    word-wrap: break-word;
+    color: black;}
+
+.div4 {
+    width: 50px;
+    height: 100px;
+    border: red solid 2px;
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    word-wrap: break-word;
+    color: black;}
+
+.infodiv {
+    width: 320px;
+    height: 350px;
+    border: red solid 2px;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    word-wrap: break-word;
+    overflow: auto;
+    color: black;}
+
+.system_division_1 {
+    width: 320px;
+    height: 350px;
+    border: red solid 2px;
+    position: absolute;
+    top: 30px;
+    left: 600px;
+    word-wrap: break-word;
+    overflow: auto;
+    background-repeat: no-repeat;
+    background-image: "url('images/blocks_faded_200x300.png')";
+    background-size: 100% 100%;
+    color: black;}
+
+
+
+
+/*
+console.log (div3 = new divProtoType_1("app", "div3", Date()));
+inheritPrototype(div3, divProtoType_1);
+//console.log (howdy.create());
+console.log (div3.appendChild());
+//console.log (div3.backgroundImage("images/blocks_faded_200x300.png"));
+console.log (div3.div.style.width = "50px");
+console.log (div3.div.style.height = "100px");
+div3.div.style.border =  "red solid 2px";
+div3.div.style.position = "absolute";
+div3.div.style.top = "200px";
+div3.div.style.left = "75px";
+div3.div.style.wordWrap = "break-word";
+
+console.log (div3.div.style.co3lor = "black");
+console.log (div3.setInnerHTML ("div3---<br>We are Vishnu. We are watching you."));
+
+console.log (div4 = new divProtoType_1("app", "div4", Date()));
+inheritPrototype(div4, divProtoType_1);
+//console.log (howdy.create());
+console.log (div4.appendChild());
+//console.log (div4.backgroundImage("images/blocks_faded_200x300.png"));
+console.log (div4.div.style.width = "50px");
+console.log (div4.div.style.height = "100px");
+div4.div.style.border =  "red solid 2px";
+div4.div.style.position = "absolute";
+div4.div.style.top = "200px";
+div4.div.style.left = "130px";
+div4.div.style.wordWrap = "break-word";
+
+console.log (div4.div.style.co3lor = "black");
+console.log (div4.setInnerHTML ("div4---<br>We are Vishnu. We are watching you."));
+
+console.log (infodiv = new divProtoType_1("app", "infodiv", Date()));
+inheritPrototype(infodiv, divProtoType_1);
+//console.log (howdy.create());
+console.log (infodiv.appendChild());
+//console.log (infodiv.backgroundImage("images/blocks_faded_200x300.png"));
+//console.log (infodiv.div.style.width = "50px");
+console.log (infodiv.div.style.height = "350px");
+infodiv.div.style.border =  "red solid 2px";
+infodiv.div.style.position = "absolute";
+infodiv.div.style.top = "10px";
+infodiv.div.style.left = "250px";
+infodiv.div.style.wordWrap = "break-word";
+
+console.log (infodiv.div.style.color = "black");
+console.log (infodiv.setInnerHTML ("infodiv---<br>We are Vishnu. We are watching you."));
+
+console.log (system_division_1 = new divProtoType_1("app", "system_division_1", Date()));
+inheritPrototype(system_division_1, divProtoType_1);
+//console.log (howdy.create());
+console.log (system_division_1.appendChild());
+//console.log (system_division_1.backgroundImage("images/blocks_faded_200x300.png"));
+//console.log (system_division_1.div.style.width = "50px");
+console.log (system_division_1.div.style.height = "350px");
+system_division_1.div.style.border =  "red solid 2px";
+system_division_1.div.style.position = "absolute";
+system_division_1.div.style.top = "30px";
+system_division_1.div.style.left = "600px";
+system_division_1.div.style.width= "320px";
+system_division_1.div.style.height = "350px";
+system_division_1.div.style.wordWrap = "break-word";
+system_division_1.div.style.overFlow = "auto";
+system_division_1.div.style.backgroundRepeat = "no-repeat";
+system_division_1.div.style.backgroundImage = "url('images/blocks_faded_200x300.png ')";
+system_division_1.div.style.backgroundSize = "100% 100%";
+
+console.log (system_division_1.div.style.color = "yellow");
+console.log (system_division_1.setInnerHTML ("system_division_1---<br>We are Vishnu. We are watching you."));
+
+*/
+
+
+.andy_exo_properties {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+    z-index: 1;
+    opacity: 1.0;
+/*    border: 5px solid blue; */
+    background-color: white;}
+
+.milicent_exo_properties {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 0px;
+    left: 100px;
+    overflow: auto;
+    z-index: 1;
+    opacity: 1.0;
+/*    border: 5px solid blue; */
+    background-color: white;}
+
+.andy_exo_properties_default_properties {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 100px;
+    left: 300px;
+    overflow: auto;
+    z-index: 1;
+    opacity: 1.0;
+/*    border: 5px solid blue; */
+    background-color: white;}
+
+.milicent_exo_properties_default_properties {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    top: 0px;
+    left: 200px;
+    overflow: auto;
+    z-index: 1;
+    opacity: 1.0;
+/*    border: 5px solid blue; */
+    background-color: white;}
+
+.system_division_1 img {
+    position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  /* Maintain aspect ratio */
+  max-height: 100%;
+  max-width: 100%;
+}
+
+
+
+.opaque_image_background {
+  opacity: .30;
+  /* IE */
+  -moz-opacity: 0.6;
+  /* Mozilla */
+  opacity: 0.6;
+  /* CSS3 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
