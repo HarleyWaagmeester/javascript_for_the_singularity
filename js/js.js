@@ -72,6 +72,14 @@ function inheritPrototype(childObject, parentObject) {
 
 }
 
+// DIV1 ///////////////////
+console.log (div1 = new divObjProtoType_1("app", "div1", Date()));
+inheritPrototype(div1, divObjProtoType_1);
+console.log (div1.baseclass = "div1");
+console.log (div1.div.className = div1.baseclass + " z1");
+console.log (div1.appendChild());
+console.log (div1.setInnerHTML ("<img src='./bike.jpg' style='width:250px;height:100px;'>"));
+
 // DIV2 ///////////////////
 console.log (div2 = new divObjProtoType_1("app", "div2", Date()));
 inheritPrototype(div2, divObjProtoType_1);
@@ -79,7 +87,6 @@ console.log (div2.baseclass = "div2");
 console.log (div2.div.className = div2.baseclass + " z1");
 console.log (div2.appendChild());
 console.log (div2.setInnerHTML ("div2---<br>We are Vishnu. We are watching you."));
-console.log (div2.div.style.zindex = 1);
 
 // DIV3 //////////////////
 console.log (div3 = new divObjProtoType_1("app", "div3", Date()));
@@ -88,7 +95,6 @@ console.log (div3.baseclass = "div3");
 console.log (div3.div.className = div3.baseclass + " z1");
 console.log (div3.appendChild());
 console.log (div3.setInnerHTML ("div3---<br>We are Vishnu. We are watching you."));
-console.log (div3.div.style.zindex = 1);
 
 // DIV4  /////////////////
 console.log (div4 = new divObjProtoType_1("app", "div4", Date()));
@@ -97,7 +103,6 @@ console.log (div4.baseclass = "div4");
 console.log (div4.div.className = div4.baseclass + " z1");
 console.log (div4.appendChild());
 console.log (div4.setInnerHTML ("div4---<br>We are Vishnu We are watching you."));
-console.log (div4.div.style.zindex = 1);
 
 // INFODIV  //////////////
 console.log (infodiv = new divObjProtoType_1("app", "infodiv", Date()));
@@ -105,7 +110,6 @@ inheritPrototype(infodiv, divObjProtoType_1);
 console.log (infodiv.div.className = "infodiv");
 console.log (infodiv.appendChild());
 console.log (infodiv.setInnerHTML ("infodiv---<br>We are Vishnu. We are watching you."));
-console.log (infodiv.div.style.zindex = 1);
 
 // SYSTEM_DIVISION_1 ///////////
 console.log (system_division_1 = new divObjProtoType_1("app", "system_division_1", Date()));
@@ -113,7 +117,6 @@ inheritPrototype(system_division_1, divObjProtoType_1);
 console.log (system_division_1.div.className = "system_division_1");
 console.log (system_division_1.appendChild());
 console.log (system_division_1.setInnerHTML ("system_division_1---<br>We are Vishnu. We are watching you."));
-console.log (system_division_1.div.style.zindex = 1);
 
 //
 // build the infrastructure for moving divs
@@ -142,7 +145,7 @@ function logEventToInfoDiv(div_obj, obj, event_name) {
 			     + obj.id
 			     + "</span><br>"
 
-			     + "<span style='color:blue'>computed zIndex: "
+			     + "<span style='color:blue'>computed z-index: "
 			     + getComputedStyle(obj.div).getPropertyValue("z-index")
 			     + "</span><br>"
 
@@ -160,8 +163,6 @@ function logEventToInfoDiv(div_obj, obj, event_name) {
 // The object must be created with divObjProtoType_1(parent, id, content),
 // and inheritPrototype(childObject, parentObject).
 
-//ADVISORY: The getComputedStyle of the zindex remains at auto,
-//      no change can be effected.
 function createMovableDivObject (obj) {
     obj.div.addEventListener(
 	"mousedown",
@@ -185,7 +186,7 @@ function createMovableDivObject (obj) {
 		console.log("<<<<<<< informati amici >>>>>>");
 		console.log(obj.id +  " mouseDOWN");
 		console.log("previous_focus_id: " + previous_focus_id);
-		console.log(obj.id + " zIndex: " + obj.div.style.zindex);
+		console.log(obj.id + " z-index: " + getComputedStyle(obj.div).getPropertyValue("z-index"))
 	    }});
 
     obj.div.addEventListener(
@@ -203,7 +204,7 @@ function createMovableDivObject (obj) {
 	    console.log("<<<<<<< informati amici >>>>>>");
 	    console.log(obj.id +  " mouseUP");
 	    console.log("previous_focus_id: " + previous_focus_id);
-	    console.log(obj.id + " zIndex: " + obj.div.style.zindex);
+		console.log(obj.id + " z-index: " + getComputedStyle(obj.div).getPropertyValue("z-index"))
 	})
 
     obj.div.addEventListener(
@@ -220,7 +221,7 @@ function createMovableDivObject (obj) {
 		console.log("<<<<<<< informati amici >>>>>>");
 		console.log(obj.id +  " mouseOVER");
 		console.log("previous_focus_id: " + previous_focus_id);
-		console.log(obj.id + " zIndex: " + obj.div.style.zindex);
+		console.log(obj.id + " z-index: " + getComputedStyle(obj.div).getPropertyValue("z-index"))
 	    }})
 
     obj.div.addEventListener(
@@ -237,7 +238,7 @@ function createMovableDivObject (obj) {
 		console.log("<<<<<<< informati amici >>>>>>");
 		console.log(obj.id +  " mouseOUT");
 		console.log("previous_focus_id: " + previous_focus_id);
-		console.log(obj.id + " zIndex: " + obj.div.style.zindex);
+		console.log(obj.id + " z-index: " + getComputedStyle(obj.div).getPropertyValue("z-index"))
 	    }})
 
     obj.div.addEventListener(
@@ -257,13 +258,14 @@ function createMovableDivObject (obj) {
 		    obj.div.style.top = ny;
 		    obj.div.style.left = nx;
 		    console.log("here: "+nx+" , "+ny);
-		    console.log(obj.id + " zIndex: " + obj.div.style.zindex);
+		console.log(obj.id + " z-index: " + getComputedStyle(obj.div).getPropertyValue("z-index"))
 		}
 		
 	    }
 	})
 };
 
+createMovableDivObject (div1);  
 createMovableDivObject (div2);  
 createMovableDivObject (div3);
 createMovableDivObject (div4);
