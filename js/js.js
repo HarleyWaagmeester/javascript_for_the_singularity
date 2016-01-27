@@ -1,7 +1,7 @@
 // annuit coeptis
 // js.js
 // Provides:
-// Html element creation using Parasitic Combination Inheritance.-mode"
+// Html element creation using Parasitic Combination Inheritance.
 // ..and..
 // An infrastructure for moving divs'.
 
